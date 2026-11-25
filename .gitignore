@@ -1,0 +1,24 @@
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+*.log
+.env
+.env.*
+node_modules/
+dist/
+build/
+coverage/
+
+# Private development files
+backups/
+docs/
+
+# macOS and asset placeholders
+.DS_Store
+assets/**/.DS_Store
+assets/**/.gitkeep
+
+# Temporary assets and placeholders
+assets/images/temporary/
+*.gitkeep

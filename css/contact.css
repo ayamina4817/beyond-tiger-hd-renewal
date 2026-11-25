@@ -1,0 +1,378 @@
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-hero {
+  padding-bottom: 100px;
+}
+
+.contact-page-section {
+  padding: 120px 24px 150px;
+  background: #ffffff;
+}
+
+.contact-page-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-page-intro {
+  margin-bottom: 80px;
+}
+
+.contact-page-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: #C6A45C;
+  margin-bottom: 20px;
+}
+
+.contact-page-intro h2 {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin-bottom: 30px;
+  color: #242424;
+}
+
+.contact-page-intro > p:last-child {
+  font-size: 15px;
+  line-height: 2.2;
+  color: #777777;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form-field {
+  margin-bottom: 45px;
+}
+
+.contact-form-field label {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #242424;
+  margin-bottom: 15px;
+}
+
+.contact-required {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 10px;
+  color: #C6A45C;
+  letter-spacing: 0.08em;
+}
+
+.contact-form-field input,
+.contact-form-field select,
+.contact-form-field textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px 20px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #242424;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form-field input:focus,
+.contact-form-field select:focus,
+.contact-form-field textarea:focus {
+  border-color: #C6A45C;
+}
+
+.contact-form-field input::placeholder,
+.contact-form-field textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.contact-form-field select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23777777' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  cursor: pointer;
+}
+
+.contact-form-field textarea {
+  resize: vertical;
+  min-height: 200px;
+  line-height: 2;
+}
+
+.contact-form-privacy {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contact-form-privacy p {
+  font-size: 12px;
+  line-height: 2;
+  color: #888888;
+}
+
+.contact-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 360px;
+  min-height: 75px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background: #242424;
+  border: 1px solid #242424;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-submit span {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.contact-submit:hover {
+  background: #ffffff;
+  color: #242424;
+}
+
+.contact-submit:hover span {
+  transform: translate(4px, -4px);
+}
+
+.contact-closing {
+  background: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+
+  .contact-hero {
+    padding-bottom: 60px;
+  }
+
+  .contact-page-section {
+    padding: 80px 20px 100px;
+  }
+
+  .contact-page-intro {
+    margin-bottom: 55px;
+  }
+
+  .contact-page-intro h2 {
+    font-size: 28px;
+  }
+
+  .contact-page-intro > p:last-child {
+    font-size: 14px;
+  }
+
+  .contact-form-field {
+    margin-bottom: 35px;
+  }
+
+  .contact-form-field input,
+  .contact-form-field select,
+  .contact-form-field textarea {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .contact-form-field textarea {
+    min-height: 180px;
+  }
+
+  .contact-submit {
+    max-width: none;
+    min-height: 65px;
+  }
+}
+
+
+/* =========================
+   CONTACT CONFIRM MODAL
+========================= */
+
+.contact-confirm-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.contact-confirm-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact-confirm-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.72);
+}
+
+.contact-confirm-content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 760px);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #ffffff;
+  padding: 65px;
+  color: #242424;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.contact-confirm-modal.is-open .contact-confirm-content {
+  transform: translateY(0);
+}
+
+.contact-confirm-close {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  border: none;
+  background: transparent;
+  font-size: 32px;
+  font-weight: 300;
+  color: #242424;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.contact-confirm-content h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contact-confirm-intro {
+  font-size: 14px;
+  line-height: 2;
+  color: #777777;
+  margin-bottom: 40px;
+}
+
+.contact-confirm-list {
+  border-top: 1px solid #dddddd;
+}
+
+.contact-confirm-item {
+  padding: 25px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.contact-confirm-item > span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #C6A45C;
+  margin-bottom: 12px;
+}
+
+.contact-confirm-item > p {
+  font-size: 14px;
+  line-height: 2;
+  color: #242424;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.contact-confirm-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.contact-confirm-actions button {
+  flex: 1;
+  min-height: 65px;
+  padding: 18px;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-confirm-back {
+  background: #ffffff;
+  border: 1px solid #242424;
+  color: #242424;
+}
+
+.contact-confirm-back:hover {
+  background: #f5f5f5;
+}
+
+.contact-confirm-submit {
+  background: #242424;
+  border: 1px solid #242424;
+  color: #ffffff;
+}
+
+.contact-confirm-submit:hover {
+  background: #ffffff;
+  color: #242424;
+}
+
+.contact-confirm-notice {
+  margin-top: 25px;
+  font-size: 13px;
+  line-height: 2;
+  color: #C6A45C;
+  text-align: center;
+}
+
+body.contact-confirm-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .contact-confirm-modal {
+    padding: 15px;
+  }
+
+  .contact-confirm-content {
+    padding: 55px 25px 35px;
+    max-height: 90vh;
+  }
+
+  .contact-confirm-close {
+    top: 16px;
+    right: 18px;
+    font-size: 28px;
+  }
+
+  .contact-confirm-content h2 {
+    font-size: 23px;
+  }
+
+  .contact-confirm-actions {
+    flex-direction: column;
+  }
+
+  .contact-confirm-actions button {
+    flex: none;
+    min-height: 60px;
+  }
+}
+

@@ -1,0 +1,264 @@
+/* =========================================
+   BUSINESS DETAIL PAGE
+   Beyond Tiger HD Corporation
+========================================= */
+
+.business-detail-hero {
+  padding: 160px 10% 140px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(198,164,92,.28);
+}
+
+.business-detail-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.business-detail-label {
+  color: #C6A45C;
+  font-size: 12px;
+  letter-spacing: .18em;
+  margin-bottom: 40px;
+}
+
+.business-detail-hero h1 {
+  font-size: clamp(60px, 10vw, 140px);
+  line-height: .95;
+  letter-spacing: -.06em;
+  font-weight: 500;
+  color: #242424;
+}
+
+.business-detail-hero h1 span {
+  color: #C6A45C;
+}
+
+.business-detail-subtitle {
+  margin-top: 30px;
+  font-size: 14px;
+  letter-spacing: .15em;
+  color: #777777;
+}
+
+.business-detail-lead {
+  margin-top: 80px;
+  font-size: clamp(24px, 4vw, 42px);
+  line-height: 1.8;
+  letter-spacing: .04em;
+  color: #242424;
+}
+
+.business-detail-section {
+  padding: 130px 10%;
+  border-bottom: 1px solid rgba(198,164,92,.28);
+  background: #ffffff;
+}
+
+.business-detail-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 80px;
+}
+
+.business-detail-section-heading span {
+  color: #C6A45C;
+  font-size: 13px;
+  letter-spacing: .1em;
+}
+
+.business-detail-section-heading p {
+  color: #777777;
+  font-size: 12px;
+  letter-spacing: .18em;
+}
+
+.business-detail-content {
+  max-width: 1000px;
+  margin-left: auto;
+}
+
+.business-detail-content h2 {
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .04em;
+  color: #242424;
+  margin-bottom: 50px;
+}
+
+.business-detail-content > p {
+  font-size: 15px;
+  line-height: 2.5;
+  letter-spacing: .04em;
+  color: #777777;
+  max-width: 780px;
+  margin-bottom: 25px;
+}
+
+.business-detail-pillar {
+  padding: 45px 0;
+  border-top: 1px solid rgba(198,164,92,.28);
+}
+
+.business-detail-pillar > span {
+  color: #C6A45C;
+  font-size: 12px;
+  letter-spacing: .15em;
+}
+
+.business-detail-pillar h3 {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  color: #242424;
+}
+
+.business-detail-pillar p {
+  margin-top: 20px;
+  max-width: 700px;
+  font-size: 14px;
+  line-height: 2.3;
+  letter-spacing: .04em;
+  color: #777777;
+}
+
+.business-detail-closing {
+  padding: 150px 10%;
+  text-align: center;
+  background: #ffffff;
+}
+
+.business-detail-closing > p {
+  color: #C6A45C;
+  font-size: 12px;
+  letter-spacing: .2em;
+}
+
+.business-detail-closing h2 {
+  margin-top: 35px;
+  font-size: clamp(35px, 6vw, 80px);
+  font-weight: 500;
+  letter-spacing: .05em;
+  color: #242424;
+}
+
+.business-detail-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 65px;
+  padding: 20px 30px;
+  border: 1px solid rgba(198,164,92,.45);
+  text-decoration: none;
+  color: #242424;
+  font-size: 12px;
+  letter-spacing: .12em;
+  transition: .3s ease;
+}
+
+.business-detail-back:hover {
+  color: #C6A45C;
+  border-color: #C6A45C;
+}
+
+.business-detail-arrow {
+  color: #C6A45C;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .business-detail-hero {
+    padding: 110px 5% 90px;
+  }
+
+  .business-detail-label {
+    margin-bottom: 30px;
+  }
+
+  .business-detail-hero h1 {
+    font-size: clamp(48px, 12vw, 90px);
+    overflow-wrap: anywhere;
+  }
+
+  .business-detail-subtitle {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+
+  .business-detail-lead {
+    margin-top: 55px;
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  .business-detail-section {
+    padding: 90px 5%;
+  }
+
+  .business-detail-section-heading {
+    margin-bottom: 50px;
+  }
+
+  .business-detail-content h2 {
+    font-size: clamp(30px, 8vw, 48px);
+    margin-bottom: 35px;
+  }
+
+  .business-detail-content > p {
+    font-size: 13px;
+    line-height: 2.3;
+  }
+
+  .business-detail-pillar {
+    padding: 35px 0;
+  }
+
+  .business-detail-pillar h3 {
+    font-size: 26px;
+  }
+
+  .business-detail-pillar p {
+    font-size: 13px;
+    line-height: 2.2;
+  }
+
+  .business-detail-closing {
+    padding: 100px 5%;
+  }
+
+  .business-detail-closing h2 {
+    font-size: clamp(30px, 8vw, 50px);
+  }
+
+  .business-detail-back {
+    gap: 20px;
+    padding: 17px 22px;
+  }
+}
+
+/* CULTURE VALUE LINKS */
+.culture-value-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.culture-value-link:hover {
+  opacity: 0.7;
+}
+
+.culture-value-link h3,
+.culture-value-link p {
+  color: inherit;
+}
+
+.culture-value-link h3 {
+  color: #242424;
+}
+
+.culture-value-link p {
+  color: #777777;
+}
